@@ -20,8 +20,8 @@
         }
 
         .invoice-box {
-            max-width: 210mm;
-            height: 297mm;
+            max-width: 800px;
+            height: 900px;
             margin: auto;
             padding: 20px;
             border: 1px solid black;
@@ -31,6 +31,7 @@
             color: #555;
             box-sizing: border-box;
         }
+
 
         .invoice-box table {
             width: 100%;
@@ -42,7 +43,7 @@
         .invoice-box table td {
             padding: 5px;
         }
-        
+
         .invoice-box table tr.heading td {
             background: #1864ab;
             border-bottom: 1px solid #1864ab;
@@ -64,6 +65,20 @@
             color: #333;
             text-align: left;
         }
+
+
+        .heading,
+        .item {
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        .heading td,
+        .item td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -80,63 +95,75 @@
                 <td colspan="4">
                     204 Centrum Mall MG Road <br>
                     Sultanpur <br>
-                    Ambulipura Village, Varthur Hobli, <br>
                     India <br>
-                    GSTIN 07AAMCP4916B1ZI
+                    GSTIN : 07AAMCP4916B1ZI
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4"></td>
-                <td colspan="4" style="text-align: right; padding-bottom: 20px;">
-                    <strong>Invoice No :</strong> SDDKEHDBH <br>
-                    Invoice Date: 10/10/1000<br />
-                    Terms : Due on Receipt<br />
-                    Due Date : 25/02/2025
-                </td>
+                <td colspan="8" style="height: 20px;"></td>
             </tr>
 
-            <tr class="heading" style="color: #fff;">
-                <td colspan="8" style="background-color: white; color: #000; border: none;" >Bill To:</td>
+
+            <tr>
+                <td colspan="6" style="background-color: white; color: #000; border: none; font-weight: 600;">Bill To:
+                </td>
+                <td colspan="1" style="padding-bottom: 0px;"> <strong>Invoice No :</strong> </td>
+                <td colspan="1" style="text-align: right;">SDDKEHDBH</td>
             </tr>
 
-            <tr class="details">
-                <td colspan="4">AMAN GARG <br>
-                    Mobile : 123456789 <br>
-                    Email : abc@gmail.com
-                </td>
+            <tr style="padding-bottom: 0px; padding-top: 0px;">
+                <td colspan="6" style="padding-bottom: 0px;">AMAN GARG</td>
+                <td colspan="1" style="padding-bottom: 0px; padding-top: 0px;"><strong>Invoice Date:</strong> </td>
+                <td colspan="1" style="text-align: right;">10/06/2024</td>
+            </tr>
+
+            <tr style="padding-bottom: 0px; padding-top: 0px;">
+                <td colspan="6" style="padding-bottom: 0px; padding-top: 0px;">Mobile : 123456789</td>
+                <td colspan="1"><strong style="padding-bottom: 0px; padding-top: 0px;">Terms :</strong> </td>
+                <td colspan="1" style="text-align: right;">Due on Receipt </td>
+            </tr>
+
+            <tr style="padding-bottom: 0px; padding-top: 0px;"  >
+                <td colspan="6" style="padding-bottom: 0px; padding-top: 0px;">Email : abc@gmail.com</td>
+                <td colspan="1" style="padding-bottom: 0px; padding-top: 0px;"><strong>Due Date :</strong></td>
+                <td colspan="1" style="text-align: right;"> 25/06/2024</td>
+            </tr>
+
+            <tr>
+                <td colspan="8" style="height: 20px;"></td>
             </tr>
 
             <tr class="heading" style="color: #fff;">
                 <td>#</td>
                 <td>Item</td>
-                <td>Center</td>
-                <td>HSN/SAC</td>
-                <td>Qty</td>
-                <td>Rate</td>
-                <td>IGST</td>
+                <td style="text-align: left;">Center</td>
+                <td style="text-align: left;">HSN/SAC</td>
+                <td style="text-align: left;">Qty</td>
+                <td style="text-align: left;">Rate</td>
+                <td style="text-align: left;">IGST</td>
                 <td>Amount</td>
             </tr>
 
             <tr class="item">
                 <td>1</td>
                 <td style="text-align: left;">Website design</td>
-                <td>123</td>
-                <td>1.00</td>
-                <td>234</td>
-                <td>234</td>
-                <td>234</td>
+                <td style="text-align: left;">123</td>
+                <td style="text-align: left;">1.00</td>
+                <td style="text-align: left;">234</td>
+                <td style="text-align: left;">234</td>
+                <td style="text-align: left;">234</td>
                 <td>$300.00</td>
             </tr>
 
             <tr class="item">
                 <td>2</td>
                 <td style="text-align: left;">Hosting</td>
-                <td>123</td>
-                <td>1.00</td>
-                <td>234</td>
-                <td>234</td>
-                <td>234</td>
+                <td style="text-align: left;">123</td>
+                <td style="text-align: left;">1.00</td>
+                <td style="text-align: left;">234</td>
+                <td style="text-align: left;">234</td>
+                <td style="text-align: left;">234</td>
                 <td>$75.00</td>
             </tr>
 
@@ -146,32 +173,32 @@
 
             <tr>
                 <td colspan="6"></td>
-                <td colspan="1" style="color: #1864ab; font-weight: 600;">Sub Total :</td>
-                <td colspan="1" style="text-align: right; color: #1864ab; font-weight: 600;">12345</td>
+                <td class="item" colspan="1" style="color: #1864ab; font-weight: 600;">Sub Total :</td>
+                <td class="item" colspan="1" style="text-align: right; color: #1864ab; font-weight: 600;">12345</td>
             </tr>
 
             <tr>
                 <td colspan="6"></td>
-                <td colspan="1">IGST (18%) :</td>
-                <td colspan="1" style="text-align: right;">1234</td>
+                <td class="item" colspan="1">IGST (18%) :</td>
+                <td class="item" colspan="1" style="text-align: right;">1234</td>
             </tr>
 
             <tr>
                 <td colspan="6"></td>
-                <td colspan="1">Total :</td>
-                <td colspan="1" style="text-align: right;">12345</td>
+                <td class="item" colspan="1">Total :</td>
+                <td class="item" colspan="1" style="text-align: right;">12345</td>
             </tr>
 
             <tr>
                 <td colspan="6"></td>
-                <td colspan="1">Payment Mode :</td>
-                <td colspan="1" style="text-align: right;">Online</td>
+                <td class="item" colspan="1">Payment Mode :</td>
+                <td class="item" colspan="1" style="text-align: right;">Online</td>
             </tr>
 
             <tr>
                 <td colspan="6"></td>
-                <td colspan="1">Balance Due :</td>
-                <td colspan="2" style="text-align: right;">12345</td>
+                <td class="item" colspan="1">Balance Due :</td>
+                <td class="item" colspan="2" style="text-align: right;">12345</td>
             </tr>
         </table>
     </div>
