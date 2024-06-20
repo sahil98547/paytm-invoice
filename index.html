@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>PushSport Invoice</title>
+
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 100px;
+        }
+
+        .invoice-box {
+            max-width: 210mm;
+            height: 297mm;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+            box-sizing: border-box;
+        }
+
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        .invoice-box table td {
+            padding: 5px;
+        }
+        
+        .invoice-box table tr.heading td {
+            background: #1864ab;
+            border-bottom: 1px solid #1864ab;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .invoice-box table tr.details td {
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table tr td:nth-child(8) {
+            text-align: right;
+        }
+
+        .title {
+            font-size: 20px;
+            line-height: 15px;
+            color: #333;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table>
+            <tr class="top">
+                <td colspan="8" class="title" style="font-weight: 600;">
+                    Push Sports Arenas Pvt Ltd
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="4">
+                    204 Centrum Mall MG Road <br>
+                    Sultanpur <br>
+                    Ambulipura Village, Varthur Hobli, <br>
+                    India <br>
+                    GSTIN 07AAMCP4916B1ZI
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="4" style="text-align: right; padding-bottom: 20px;">
+                    <strong>Invoice No :</strong> SDDKEHDBH <br>
+                    Invoice Date: 10/10/1000<br />
+                    Terms : Due on Receipt<br />
+                    Due Date : 25/02/2025
+                </td>
+            </tr>
+
+            <tr class="heading" style="color: #fff;">
+                <td colspan="8" style="background-color: white; color: #000; border: none;" >Bill To:</td>
+            </tr>
+
+            <tr class="details">
+                <td colspan="4">AMAN GARG <br>
+                    Mobile : 123456789 <br>
+                    Email : abc@gmail.com
+                </td>
+            </tr>
+
+            <tr class="heading" style="color: #fff;">
+                <td>#</td>
+                <td>Item</td>
+                <td>Center</td>
+                <td>HSN/SAC</td>
+                <td>Qty</td>
+                <td>Rate</td>
+                <td>IGST</td>
+                <td>Amount</td>
+            </tr>
+
+            <tr class="item">
+                <td>1</td>
+                <td style="text-align: left;">Website design</td>
+                <td>123</td>
+                <td>1.00</td>
+                <td>234</td>
+                <td>234</td>
+                <td>234</td>
+                <td>$300.00</td>
+            </tr>
+
+            <tr class="item">
+                <td>2</td>
+                <td style="text-align: left;">Hosting</td>
+                <td>123</td>
+                <td>1.00</td>
+                <td>234</td>
+                <td>234</td>
+                <td>234</td>
+                <td>$75.00</td>
+            </tr>
+
+            <tr>
+                <td colspan="8" style="height: 20px;"></td>
+            </tr>
+
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="1" style="color: #1864ab; font-weight: 600;">Sub Total :</td>
+                <td colspan="1" style="text-align: right; color: #1864ab; font-weight: 600;">12345</td>
+            </tr>
+
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="1">IGST (18%) :</td>
+                <td colspan="1" style="text-align: right;">1234</td>
+            </tr>
+
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="1">Total :</td>
+                <td colspan="1" style="text-align: right;">12345</td>
+            </tr>
+
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="1">Payment Mode :</td>
+                <td colspan="1" style="text-align: right;">Online</td>
+            </tr>
+
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="1">Balance Due :</td>
+                <td colspan="2" style="text-align: right;">12345</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
