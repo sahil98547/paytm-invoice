@@ -4,6 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <title>PushSport Invoice</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 
     <style>
         @page {
@@ -21,7 +29,7 @@
 
         .invoice-box {
             max-width: 800px;
-            height: 800px;
+            min-height: 800px;
             margin: 20px auto;
             padding: 20px;
             border: 1px solid black;
@@ -41,7 +49,10 @@
         }
 
         .invoice-box table td {
-            padding: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
 
         .invoice-box table tr.heading td {
@@ -79,6 +90,12 @@
             padding: 8px;
             text-align: center;
         }
+
+        *{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-family: "Open Sans", sans-serif;
+        }
     </style>
 </head>
 
@@ -98,6 +115,7 @@
                     India <br>
                     GSTIN : 07AAMCP4916B1ZI
                 </td>
+                <td colspan="4" style="font-size: 32px; text-align: right; font-weight: 600; padding-left: 30px; vertical-align: baseline; color: #000;">TAX INVOICE</td>
             </tr>
 
             <tr>
@@ -106,28 +124,28 @@
 
 
             <tr>
-                <td colspan="6" style="background-color: white; color: #000; border: none; font-weight: 600;">Bill To:
+                <td colspan="5" style="background-color: white; color: #000; border: none; font-weight: 600;">Bill To :
                 </td>
-                <td colspan="1" style="padding-bottom: 0px;"> <strong>Invoice No :</strong> </td>
-                <td colspan="1" style="text-align: right; padding-bottom: 0px;">SDDKEHDBH</td>
+                <td colspan="2" style="padding-bottom: 0px; font-size: 15px;"> <strong>Invoice No :</strong> </td>
+                <td colspan="1" style="text-align: right; padding-bottom: 0px;  font-size: 15px;">SDDKEHDBH</td>
             </tr>
 
             <tr style="padding-bottom: 0px; padding-top: 0px;">
-                <td colspan="6" style="padding-bottom: 0px; padding-top: 0px;">AMAN GARG</td>
-                <td colspan="1" style="padding-bottom: 0px; padding-top: 0px;"><strong>Invoice Date:</strong> </td>
-                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;">10/06/2024</td>
+                <td colspan="5" style="padding-bottom: 0px; padding-top: 0px;">AMAN GARG</td>
+                <td colspan="2" style="padding-bottom: 0px; padding-top: 0px;  font-size: 15px;"><strong>Invoice Date:</strong> </td>
+                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;  font-size: 15px;">10/06/2024</td>
             </tr>
 
             <tr style="padding-bottom: 0px; padding-top: 0px;">
-                <td colspan="6" style="padding-bottom: 0px; padding-top: 0px;">Mobile : 123456789</td>
-                <td colspan="1" style="padding-bottom: 0px; padding-top: 0px;"><strong>Terms :</strong> </td>
-                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;">Due on Receipt </td>
+                <td colspan="5" style="padding-bottom: 0px; padding-top: 0px;">Mobile : 123456789</td>
+                <td colspan="2" style="padding-bottom: 0px; padding-top: 0px;  font-size: 15px;"><strong>Terms :</strong> </td>
+                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;  font-size: 15px;">Due on Receipt </td>
             </tr>
 
             <tr style="padding-bottom: 0px; padding-top: 0px;"  >
-                <td colspan="6" style="padding-bottom: 0px; padding-top: 0px;">Email : abc@gmail.com</td>
-                <td colspan="1" style="padding-bottom: 0px; padding-top: 0px;"><strong>Due Date :</strong></td>
-                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;"> 25/06/2024</td>
+                <td colspan="5" style="padding-bottom: 0px; padding-top: 0px;">Email : abc@gmail.com</td>
+                <td colspan="2" style="padding-bottom: 0px; padding-top: 0px;  font-size: 15px;"><strong>Due Date :</strong></td>
+                <td colspan="1" style="text-align: right; padding-bottom: 0px; padding-top: 0px;  font-size: 15px;"> 25/06/2024</td>
             </tr>
 
             <tr>
@@ -147,24 +165,24 @@
 
             <tr class="item">
                 <td>1</td>
-                <td style="text-align: left;">Website design</td>
-                <td style="text-align: left;">123</td>
+                <td style="text-align: left;">Event Booking</td>
+                <td style="text-align: left;">Push sports HUB The Dome, Sector 59 gurugram</td>
+                <td style="text-align: left;">998596</td>
                 <td style="text-align: left;">1.00</td>
-                <td style="text-align: left;">234</td>
-                <td style="text-align: left;">234</td>
-                <td style="text-align: left;">234</td>
-                <td>$300.00</td>
+                <td style="text-align: left;">₹10,000</td>
+                <td style="text-align: left;">18%</td>
+                <td>₹10,000</td>
             </tr>
 
             <tr class="item">
                 <td>2</td>
-                <td style="text-align: left;">Hosting</td>
-                <td style="text-align: left;">123</td>
+                <td style="text-align: left;">Event Booking</td>
+                <td style="text-align: left;">Push sports HUB The Dome, Sector 59 gurugram</td>
+                <td style="text-align: left;">998596</td>
                 <td style="text-align: left;">1.00</td>
-                <td style="text-align: left;">234</td>
-                <td style="text-align: left;">234</td>
-                <td style="text-align: left;">234</td>
-                <td>$75.00</td>
+                <td style="text-align: left;">₹10,000</td>
+                <td style="text-align: left;">18%</td>
+                <td>₹10,000</td>
             </tr>
 
             <tr>
@@ -172,34 +190,46 @@
             </tr>
 
             <tr>
-                <td colspan="6"></td>
-                <td class="item" colspan="1" style="color: #1864ab; font-weight: 600;">Sub Total :</td>
-                <td class="item" colspan="1" style="text-align: right; color: #1864ab; font-weight: 600;">12345</td>
+                <td colspan="5"></td>
+                <td colspan="2" class="item" colspan="1" style="color: #1864ab; font-weight: 600;">Sub Total :</td>
+                <td class="item" colspan="1" style="text-align: right; color: #1864ab; font-weight: 600;">₹20,000</td>
             </tr>
 
             <tr>
-                <td colspan="6"></td>
-                <td class="item" colspan="1">IGST (18%) :</td>
-                <td class="item" colspan="1" style="text-align: right;">1234</td>
+                <td colspan="5"></td>
+                <td colspan="2" class="item" colspan="1">IGST (18%) :</td>
+                <td class="item" colspan="1" style="text-align: right;">₹20,000</td>
             </tr>
 
             <tr>
-                <td colspan="6"></td>
-                <td class="item" colspan="1">Total :</td>
-                <td class="item" colspan="1" style="text-align: right;">12345</td>
+                <td colspan="5"></td>
+                <td colspan="2" class="item" colspan="1">Total :</td>
+                <td class="item" colspan="1" style="text-align: right;">₹20,000</td>
             </tr>
 
             <tr>
-                <td colspan="6"></td>
-                <td class="item" colspan="1">Payment Mode :</td>
+                <td colspan="5"></td>
+                <td colspan="2" class="item" colspan="1">Payment Mode :</td>
                 <td class="item" colspan="1" style="text-align: right;">Online</td>
             </tr>
 
             <tr>
-                <td colspan="6"></td>
-                <td class="item" colspan="1">Balance Due :</td>
-                <td class="item" colspan="2" style="text-align: right;">12345</td>
+                <td colspan="5"></td>
+                <td colspan="2" class="item" colspan="1">Status :</td>
+                <td class="item" colspan="2" style="text-align: right;">Paid</td>
             </tr>
+
+            <tr>
+                <td colspan="8" style="height: 20px;"></td>
+            </tr>
+
+            <tr>
+                <td colspan="8" style="padding: 0px; padding-left: 5px;">
+                    <div style="width: 50%;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                    </div>
+            </tr>
+
         </table>
     </div>
 </body>
